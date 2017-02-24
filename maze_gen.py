@@ -47,9 +47,9 @@ def generate(maze_size, trial):
     global cells
 
     if(saved_size > 0 and len(saved_mazes) == saved_size):
-        #print "loading maze ", trial%saved_size
-		rows, columns = saved_mazes[trial%saved_size]
-        return rows, columns
+              #print "loading maze ", trial%saved_size
+              rows, columns = saved_mazes[trial%saved_size]
+              return rows, columns
 
     walls = maze_size
     rows = [[1 for i in range(walls)] for j in range(walls+1)]
